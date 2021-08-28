@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="arquivo.CSS" media="screen">
+
+    <title>formulário</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Candidatos</h1>
+        <br>
+        <p id="subtitulo">Identificação:</p>
+    </div>
+    <form action="http://localhost:3333/formulario" method="post">
+        <fieldset class="grupo">
+            <div class="campo">
+                <input type="text" name="Nome" id="Nome" placeholder="Nome" required>
+                <input type="text" name="lastname" placeholder="Sobrenome" required>
+            </div>
+            <br>
+        </fieldset>
+
+        <div class="campo">
+            <p><strong>Informações Pessoais:</strong></p>
+        </div>
+        <fieldset style="margin-top: 1rem;">
+            <div class="campo">
+                <input type="text" name="Profissão" id="Profissão" placeholder="Profissão" required>
+                <input type="text" name="profissao" placeholder="Email" required>
+            </div>
+            <div class="campo">
+                <input type="text" name="Data de Nascimento" placeholder="Data de Nascimento" required>
+                <input type="text" name="nascimento" placeholder="Telefone" required>
+            </div>
+            <div class="campo">
+                <input type="text" name="Endereço" id="Endereço" placeholder="Endereço" required>
+                <input type="text" name="endereco" placeholder="Número" required>
+            </div>
+
+            <div class="campo">
+                <input type="text" name="CEP" id="CEP" placeholder="CEP" required>
+                <input type="text" name="cep" placeholder="Bairro" required>
+            </div>
+
+            <div class="campo">
+                <input type="text" name="Cidade" id="Cidade" placeholder="Cidade" required>
+                <input type="text" name="cidade" placeholder="UF" required>
+            </div>
+
+            <div class="campo">
+                <input type="text" name="CPF" id="CPF" placeholder="CPF" required>
+                <select name="estado_civil" id="estado_civil">
+                    <option value="solteiro">solteiro</option>
+                    <option value="casado">casado</option>
+                    <option value="divorciado">divorciado</option>
+                    <option value="viuvo">viuvo</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label><strong>Selecione a aplicação que você mais se destaca</strong></label>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><br>
+                    <input type="radio" name="aplicacao" volue="frontend" checked>Front-end
+                </label><br>
+                <label>
+                    <input type="radio" name="aplicacao" volue="backend">Back-end
+                </label><br>
+                <label>
+                    <input type="radio" name="aplicacao" volue="fullstack">FullStack
+                </label><br>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <p><strong>Selecione</strong></p>
+        </div>
+        <div class="campo">
+            <fieldset class="grupo">
+                <label>Sua Senioridade</label>
+                <select id="Senioridade">
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                    <option>Junior</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="campo">
+            <p><strong>Selecione as Tecnologias mais dominantes</strong></p>
+        </div>
+        <div class="campo">
+            <fieldset class="grupo">
+                <label for="tecnologia1">
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    HTML
+                </label>
+                <label for="tecnologia2">
+                    <input type="checkbox" id="css" name="css" value="CSS">
+                    CSS
+                </label>
+                <label for="tecnologia3">
+                    <input type="checkbox" id="javascript" name="javascript" value="JAVASCRIPT">
+                    JAVASCRIPT
+                </label>
+                <label for="tecnologia4">
+                    <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                    PHP
+                </label>
+                <label for="tecnologia5">
+                    <input type="checkbox" id="csharp" name="csharp" value="C#">
+                    C#
+                </label>
+                <label for="tecnologia6">
+                    <input type="checkbox" id="python" name="python" value="PYTHON">
+                    PYTHON
+                </label>
+                <label for="tecnologia7">
+                    <input type="checkbox" id="java" name="java" value="JAVA">
+                    JAVA
+                </label>
+        </div>
+        </fieldset>
+        <div class="campo">
+            <p><strong>Conte um pouco sobre sua experiência</strong></p>
+        </div>
+
+        <textarea row="6" style="width:26em" id="experiência" name="experiência"></textarea>
+        </div>
+        <div class="campo">
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
